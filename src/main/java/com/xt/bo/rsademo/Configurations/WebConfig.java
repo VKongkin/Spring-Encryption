@@ -21,7 +21,7 @@ public class WebConfig implements WebMvcConfigurer {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Applies to all endpoints
-                        .allowedOrigins("http://127.0.0.1","http://localhost:3000","http://localhost:5173")
+                        .allowedOrigins("http://127.0.0.1","http://localhost:9090","http://localhost:5173")
                         .allowedMethods("GET", "POST", "DELETE", "PUT", "OPTIONS")
                         .allowedHeaders("*")
                         .exposedHeaders(HttpHeaders.AUTHORIZATION) // Ensure JWT headers can be accessed
